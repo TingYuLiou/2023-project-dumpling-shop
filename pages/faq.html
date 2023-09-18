@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="/assets/images/LOGO-icon.png" type="image/x-icon">
+        <title>常見問題FAQ</title>
+      </head>
+
+  <body>
+
+        <!-- header -->
+        <%- include('./layout/header'); -%>
+
+        <!-- Banner -->
+        <div class="mb-5">
+        <picture>
+            <source srcset="" type="images">
+            <img src="../assets/images/bn-about-us.jpg" class="img-fluid" alt="Banner">
+        </picture>
+        </div>
+
+        <!-- QA -->
+        <div class="container">
+            <div class="faq py-80 py-lg-160">
+                <div class="text-center mb-5">
+                      <h3 class="mb-1">常見問題<span class="text-primary"> Q&A</span></h3>
+                </div>
+               <!-- 
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="accordion accordion-flush" id="questionOne">
+                            <div class="accordion-item border border-black-60 rounded-3 px-16 mb-16">
+                                <h2 class="accordion-header border-bottom border-black-60 d-flex align-items-center"
+                                    id="questionOne">
+                                    <button class="accordion-button fs-5 px-0 px-md-16 collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                        Q1. 如何下單購買水餃?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="questionOne">
+                                    <div class="accordion-body text-black-80">
+                                        <p>前往我們的網站，選擇您喜歡的水餃口味，選擇數量，然後點擊「加入購物車」按鈕。完成選購後，進入購物車頁面，按照提示完成訂單流程即可。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border border-black-60 rounded-3 px-16 mb-16">
+                                <h2 class="accordion-header border-bottom border-black-60 d-flex align-items-center"
+                                    id="questionTwo">
+                                    <button class="accordion-button fs-5 px-0 px-md-16 collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true"
+                                        aria-controls="collapseTwo">
+                                        Q2. 提供的付款方式?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="questionTwo">
+                                    <div class="accordion-body text-black-80">
+                                        <p>目前提供線上刷卡、超商繳款、貨到付款三種付款方式。在結帳階段，您可以選擇適合您的付款方式。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border border-black-60 rounded-3 px-16 mb-16">
+                                <h2 class="accordion-header border-bottom border-black-60 d-flex align-items-center"
+                                    id="questionThree">
+                                    <button class="accordion-button fs-5 px-0 px-md-16 collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true"
+                                        aria-controls="collapseThree">
+                                        Q3. 運費如何計算?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="questionThree">
+                                    <div class="accordion-body text-black-80">
+                                        <P>運費將根據您所在地區和訂購數量計算。在結帳時，系統將自動計算並顯示您的運費。</P>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border border-black-60 rounded-3 px-16 mb-16">
+                                <h2 class="accordion-header border-bottom border-black-60 d-flex align-items-center"
+                                    id="questionFour">
+                                    <button class="accordion-button fs-5 px-0 px-md-16 collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true"
+                                        aria-controls="collapseFour">
+                                        Q4. 何時能收到訂購的水餃?
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse"
+                                    aria-labelledby="questionFour">
+                                    <div class="accordion-body text-black-80">
+                                        <p>我們將在收到您的訂單後盡快處理，通常會在數個工作日內發貨。您收到的確切交貨日期將顯示在您的訂單確認郵件中。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border border-black-60 rounded-3 px-16 mb-16">
+                                <h2 class="accordion-header border-bottom border-black-60 d-flex align-items-center"
+                                    id="questionFive">
+                                    <button class="accordion-button fs-5 px-0 px-md-16 collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true"
+                                        aria-controls="collapseFive">
+                                        Q5. 能否更改已經下單的訂單內容?
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse"
+                                    aria-labelledby="questionFive">
+                                    <div class="accordion-body text-black-80">
+                                        <p>在您完成訂單後，如果您需要更改訂單內容，請儘快聯繫我們的客戶服務。我們將竭力協助您進行更改，但請注意某些情況下可能無法進行修改。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border border-black-60 rounded-3 px-16 mb-16">
+                                <h2 class="accordion-header border-bottom border-black-60 d-flex align-items-center"
+                                    id="questionSix">
+                                    <button class="accordion-button fs-5 px-0 px-md-16 collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true"
+                                        aria-controls="collapseSix">
+                                        Q6. 完成下訂後是否能取消訂單?
+                                    </button>
+                                </h2>
+                                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="questionSix">
+                                    <div class="accordion-body text-black-80">
+                                        <p>是的，如果您需要取消訂單，請在訂單確認後的一天內聯繫我們。請注意，一旦訂單進入發貨階段，將無法進行取消。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border border-black-60 rounded-3 px-16 mb-16">
+                                <h2 class="accordion-header border-bottom border-black-60 d-flex align-items-center"
+                                    id="questionSeven">
+                                    <button class="accordion-button fs-5 px-0 px-md-16 collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="true"
+                                        aria-controls="collapseSeven">
+                                        Q7. 如何查詢訂單狀態?
+                                    </button>
+                                </h2>
+                                <div id="collapseSeven" class="accordion-collapse collapse"
+                                    aria-labelledby="questionSeven">
+                                    <div class="accordion-body text-black-80">
+                                        <p>您可以登錄您的帳戶，在「訂單查詢」頁面查詢訂單狀態。此外，您也可以聯繫我們的客戶服務，我們將隨時為您提供訂單相關資訊。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+
+
+        <%- include('./layout/footer'); -%>
+
+
+
+
+          <script type="module" src="../main.js"></script>
+            <script>
+                const hamBtn = document.querySelector(".ham");
+                const mobileMenu = document.querySelector(".mobile-menu .menu");
+                const hamCloseBtn = document.querySelector(".closedHam");
+                const body = document.body;
+
+                function toggleMenu() {
+                    mobileMenu.classList.toggle('open');
+                    body.classList.toggle('hidden-y');
+                };
+
+                hamBtn.addEventListener('click', toggleMenu);
+                hamCloseBtn.addEventListener("click", toggleMenu);
+            </script>
+    </body>
+</html>

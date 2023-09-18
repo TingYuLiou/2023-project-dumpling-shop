@@ -1,0 +1,40 @@
+.logo{
+  width:240px;
+  @include mobile{
+    width: 160px;
+  }
+}
+
+.navbar-web,{
+  @include mobile{
+    display: none;
+  }
+}
+
+.navbar-mobile,{
+  display: none;
+  @include mobile{
+    display: block;
+  }
+
+}
+
+.menu{
+  background: #FDF1D9;
+  @include pad{
+    display: none;
+  }
+}
+
+.search{
+  position: relative;
+  input{
+    outline: none;
+  }
+}
+
+.search-btn{
+  position: absolute;
+  top: 0;
+  right: 0; 
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/assets/images/LOGO-icon.png" type="image/x-icon">
+    <title>填寫訂購資料</title>
+  </head>
+  <body>
+    <!-- header -->
+    <%- include('./layout/header'); -%>
+
+    <!-- Banner -->
+    <div class="mb-5">
+      <picture>
+        <source srcset="" type="images">
+        <img src="../assets/images/bn-about-us.jpg" class="img-fluid" alt="Banner">
+      </picture>
+    </div>
+
+    <!-- order step -->
+    <div data-aos="fade-up" class="text-center mb-5">
+        <h3 class="mb-1">填寫資料</h3>
+        <h5 class="text-primary"></h5>
+      </div>
+
+    <div class="order container mb-5">
+        <div class="text-center d-flex justify-content-center align-items-center">
+            <div class="text-secondary border border-secondary px-9 py-2 rounded-5">確認訂單</div>
+            <span class="material-symbols-outlined mx-3">arrow_right_alt</span>
+            <div class="order-step text-secondary border border-secondary px-9 py-2 rounded-5">填寫訂購資料</div>
+            <span class="material-symbols-outlined mx-3">arrow_right_alt</span>
+            <div class="text-secondary border border-secondary px-9 py-2 rounded-5">完成訂單</div>
+        </div>
+    </div>
+
+    <!-- form -->
+    <div class="container">
+            <table class="table mb-5">
+                <thead class="bg-primary text-white fw-bold">
+                    <tr>
+                        <td scope="col">付款方式</td>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="" class="d-flex flex-lg-row flex-column gap-lg-4 me-2">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    線上刷卡
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    ATM轉帳
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    貨到付款
+                                </label>
+                            </div>
+                        </td>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    <tr>
+                </tbody>
+            </table>
+            <div class="row d-flex flex-column flex-lg-row mb-2">
+                <div class="col mb-5">
+                    <div class="border">
+                        <div class="bg-primary">
+                        <p class="text-white fw-bold p-2">訂購人資訊</p>
+                        </div>
+                        <div class="px-4 mb-3">
+                            <label for="name" class="form-label">中文名字</label>
+                            <input type="text" class="form-control rounded-0" id="name" placeholder="王小明" required="required">
+                            <div class="d-flex gap-2">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="order-gender" id="order-gender" checked required="required">
+                                    <label class="form-check-label" for="order-gender">
+                                        先生
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gender" id="gender" required="required">
+                                    <label class="form-check-label" for="gender">
+                                        小姐
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-4 mb-3">
+                            <label for="Email" class="form-label">Email</label>
+                            <input type="text" class="form-control rounded-0" id="Email" placeholder="Ming@email.com" required="required">
+                        </div>
+                        <div class="px-4 mb-3">
+                            <label for="tel" class="form-label">聯絡電話</label>
+                            <input type="text" class="form-control rounded-0" id="tel" placeholder="0912345678" required="required">
+                        </div>
+                        <div class="px-4 mb-5">
+                            <label for="address" class="form-label">聯絡地址</label>
+                            <input type="text" class="form-control rounded-0" id="address"  placeholder="台北市松山區一二路三四號五樓" required="required">
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="border">
+                        <div class="bg-primary">
+                        <p class="text-white fw-bold p-2">收件人資訊</p>
+                        </div>
+                        <div class="px-4 py-3 mb-3">
+                            <input class="form-check-input" type="checkbox" name="checkbox" id="checkbox">
+                            <label class="form-check-label" for="checkbox">
+                                收件人同訂購人資料請打勾
+                            </label>
+                        </div>
+                        <div class="px-4 mb-3">
+                            <label for="name" class="form-label">中文名字</label>
+                            <input type="text" class="form-control rounded-0 mb-1" id="name">
+                            <div class="d-flex gap-2">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gender" id="gender" checked>
+                                    <label class="form-check-label" for="gender">
+                                        先生
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gender" id="gender">
+                                    <label class="form-check-label" for="gender">
+                                        小姐
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-4 mb-3">
+                            <label for="tel" class="form-label">聯絡電話</label>
+                            <input type="text" class="form-control rounded-0" id="tel">
+                        </div>
+                        <div class="px-4 mb-5">
+                            <label for="address" class="form-label">聯絡地址</label>
+                            <input type="text" class="form-control rounded-0" id="address">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- button -->
+    
+    <div class="container mb-9">
+        <div class="text-center">
+            <a href="order-list.html">
+                <button type="button" class="btn btn-primary py-2 rounded-5 link-light m-lg-2" style="width: 160px;">上一步</button>
+            </a>
+            <a href="order-finish.html">
+                <button type="button" class="btn btn-primary py-2 rounded-5 link-light m-lg-2" style="width: 160px;">送出訂單</button>
+            </a>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

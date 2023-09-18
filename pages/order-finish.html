@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/assets/images/LOGO-icon.png" type="image/x-icon">
+    <title>完成訂單</title>
+  </head>
+  <body>
+    <!-- header -->
+    <%- include('./layout/header'); -%>
+
+    <!-- Banner -->
+    <div class="mb-5">
+      <picture>
+        <source srcset="" type="images">
+        <img src="../assets/images/bn-about-us.jpg" class="img-fluid" alt="Banner">
+      </picture>
+    </div>
+
+    <!-- finish -->
+    <div data-aos="fade-up" class="text-center mb-5">
+        <h3 class="mb-1">訂單完成</h3>
+        <h5 class="text-primary"></h5>
+      </div>
+
+    <div class="order container mb-5">
+        <div class="text-center d-flex justify-content-center align-items-center">
+            <div class="text-secondary border border-secondary px-9 py-2 rounded-5">確認訂單</div>
+            <span class="material-symbols-outlined mx-3">arrow_right_alt</span>
+            <div class="text-secondary border border-secondary px-9 py-2 rounded-5">填寫訂購資料</div>
+            <span class="material-symbols-outlined mx-3">arrow_right_alt</span>
+            <div class="order-step text-secondary border border-secondary px-9 py-2 rounded-5">完成訂單</div>
+        </div>
+    </div>
+    <div class="text-center mb-5">
+        <h3 class="text-primary mb-2">您的訂單已經成功提交！</h3>
+        <h6 class="text-secondary lh-lg ">感謝您的支持與訂購！我們將盡快處理您的訂單並安排送達。<br>
+            如有任何問題，請隨時聯繫我們的客服部門。</h6>
+      </div>
+
+      <div class="text-center mb-9">
+        <a href="product-list.html">
+            <button type="button" class="btn btn-primary py-2 rounded-5 link-light m-lg-2" style="width: 160px;">繼續購買</button>
+        </a>
+        <a href="index.html">
+          <button type="button" class="btn btn-primary py-2 rounded-5 link-light m-lg-2" style="width: 160px;">確認</button>
+      </a>
+    </div>
+
+    <!-- footer -->
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

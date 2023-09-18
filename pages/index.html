@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/assets/images/LOGO-icon.png" type="image/x-icon">
+    <title>暖食坊水餃舖</title>
+  </head>
+  <body>
+    <!-- header -->
+    <%- include('./layout/header'); -%>
+
+    <!-- banner -->
+    <div data-aos="fade-up" class="web-bn d-flex flex-lg-row flex-column mb-9 ">
+      <div id="carouselExampleIndicators" class="carousel slide img-fluid" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2500">
+            <a href="product-list.html">
+              <img src="/assets/images/index-bn01.jpg" class="d-block w-100" alt="banner">
+            </a>
+          </div>
+          <div class="carousel-item"  data-bs-interval="3500">
+            <a href="product-list.html">
+              <img src="/assets/images/index-bn02.jpg" class="d-block w-100" alt="banner">
+            </a>
+          </div>
+          <div class="carousel-item" data-bs-interval="3500">
+            <a href="product-list.html">
+              <img src="/assets/images/index-bn03.jpg" class="d-block w-100" alt="banner">
+            </a>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+        <!-- <div class="bn-bar">
+        <div>
+        <div class="">
+          <img src="/assets/images/index-bn-bar.jpg">
+          <div class="">
+            <h2 class="bn-title text-dark text-center font-size-72">新開幕!</h2>
+            <h2 class="bn-title text-dark text-center font-size-72">全館商品</h2>
+            <h2 class="bn-title text-dark text-center font-size-72"><span class="highlight">8</span>折</h2>
+            <div class="text-center">
+            <a href="product-list.html"><button type="button" class="btn btn-lg btn-primary border-white rounded-5 link-light">立即購買</button>
+            </a>
+            </div>
+        </div>
+         </div>
+        </div>
+      </div>-->
+    </div>
+
+    <!--
+    <div class="mobile-bn d-flex flex-lg-row flex-column mb-9 ">
+      <div id="carouselExampleIndicators" class="carousel slide img-fluid" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3500">
+            <a href="product-list.html">
+              <img src="/assets/images/index-bn01-966-720.jpg" class="d-block w-100" alt="banner">
+            </a>
+          </div>
+          <div class="carousel-item"  data-bs-interval="3500">
+            <a href="product-list.html">
+              <img src="/assets/images/index-bn02-966-720.jpg" class="d-block w-100" alt="banner">
+            </a>
+          </div>
+          <div class="carousel-item" data-bs-interval="3500">
+            <a href="product-list.html">
+              <img src="/assets/images/index-bn03-966-720.jpg" class="d-block w-100" alt="banner">
+            </a>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    -->
+
+
+    <!-- Hot Product -->
+      <div data-aos="fade-up" class="container mb-5">
+        <div class="text-center mb-5">
+          <h3 class="mb-1">熱門商品</h3>
+          <h5 class="text-primary">HOT PRODUCT</h5>
+        </div>
+
+        <ul data-aos="fade-up" class="product row d-flex justify-content-center list-unstyled">
+          <li class="col-sm-12 col-md-6 col-lg-3" >
+            <div class=" card rounded-4 border-primary mb-4">
+              <div class="px-3 pt-3"><img src="../assets/images/product/product01.png" class="card-img-top rounded-4" alt="dumpling"/></div>
+              <div class="card-body d-flex justify-content-between align-items-end">
+                <div>
+                  <h5><a href="product-page.html" class="link-secondary">經典豬肉水餃</a></h5>
+                  <p class="card-text">NT.320</p>
+                </div>
+                  <span class="material-symbols-outlined" data-bs-toggle="modal" 
+                  data-bs-target="#exampleModal"
+                  >shopping_cart</span>
+              </div>
+            </div>
+          </li>
+          <li class="col-sm-12 col-md-6 col-lg-3" >
+            <div class=" card rounded-4 border-primary mb-4">
+              <div class="px-3 pt-3"><img src="../assets/images/product/product02.png" class="card-img-top rounded-4" alt="dumpling"/></div>
+              <div class="card-body d-flex justify-content-between align-items-end">
+                <div>
+                  <h5><a href="product-page.html" class="link-secondary">經典豬肉水餃</a></h5>
+                  <p class="card-text">NT.320</p>
+                </div>
+                  <span class="material-symbols-outlined" data-bs-toggle="modal" 
+                  data-bs-target="#exampleModal"
+                  >shopping_cart</span>
+              </div>
+            </div>
+          </li>
+          <li class="col-sm-12 col-md-6 col-lg-3" >
+            <div class=" card rounded-4 border-primary mb-4">
+              <div class="px-3 pt-3"><img src="../assets/images/product/product03.png" class="card-img-top rounded-4" alt="dumpling"/></div>
+              <div class="card-body d-flex justify-content-between align-items-end">
+                <div>
+                  <h5><a href="product-page.html" class="link-secondary">經典豬肉水餃</a></h5>
+                  <p class="card-text">NT.320</p>
+                </div>
+                  <span class="material-symbols-outlined" data-bs-toggle="modal" 
+                  data-bs-target="#exampleModal"
+                  >shopping_cart</span>
+              </div>
+            </div>
+          </li>
+          <li class="col-sm-12 col-md-6 col-lg-3" >
+            <div class=" card rounded-4 border-primary mb-4">
+              <div class="px-3 pt-3"><img src="../assets/images/product/product04.png" class="card-img-top rounded-4" alt="dumpling"/></div>
+              <div class="card-body d-flex justify-content-between align-items-end">
+                <div>
+                  <h5><a href="product-page.html" class="link-secondary">經典豬肉水餃</a></h5>
+                  <p class="card-text">NT.320</p>
+                </div>
+                  <span class="material-symbols-outlined" data-bs-toggle="modal" 
+                  data-bs-target="#exampleModal"
+                  >shopping_cart</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="col-sm-12 col-md-6 col-lg-3" >
+            <div class=" card rounded-4 border-primary mb-4">
+              <div class="px-3 pt-3"><img src="../assets/images/product/product02.png" class="card-img-top rounded-4" alt="dumpling"/></div>
+              <div class="card-body d-flex justify-content-between align-items-end">
+                <div>
+                  <h5><a href="product-page.html" class="link-secondary">經典豬肉水餃</a></h5>
+                  <p class="card-text">NT.320</p>
+                </div>
+                  <span class="material-symbols-outlined" data-bs-toggle="modal" 
+                  data-bs-target="#exampleModal"
+                  >shopping_cart</span>
+              </div>
+            </div>
+          </li>
+          <li class="col-sm-12 col-md-6 col-lg-3" >
+            <div class=" card rounded-4 border-primary mb-4">
+              <div class="px-3 pt-3"><img src="../assets/images/product/product04.png" class="card-img-top rounded-4" alt="dumpling"/></div>
+              <div class="card-body d-flex justify-content-between align-items-end">
+                <div>
+                  <h5><a href="product-page.html" class="link-secondary">經典豬肉水餃</a></h5>
+                  <p class="card-text">NT.320</p>
+                </div>
+                  <span class="material-symbols-outlined" data-bs-toggle="modal" 
+                  data-bs-target="#exampleModal"
+                  >shopping_cart</span>
+              </div>
+            </div>
+          </li>
+          <li class="col-sm-12 col-md-6 col-lg-3" >
+            <div class=" card rounded-4 border-primary mb-4">
+              <div class="px-3 pt-3"><img src="../assets/images/product/product01.png" class="card-img-top rounded-4" alt="dumpling"/></div>
+              <div class="card-body d-flex justify-content-between align-items-end">
+                <div>
+                  <h5><a href="product-page.html" class="link-secondary">經典豬肉水餃</a></h5>
+                  <p class="card-text">NT.320</p>
+                </div>
+                  <span class="material-symbols-outlined" data-bs-toggle="modal" 
+                  data-bs-target="#exampleModal"
+                  >shopping_cart</span>
+              </div>
+            </div>
+          </li>
+          <li class="col-sm-12 col-md-6 col-lg-3" >
+            <div class=" card rounded-4 border-primary mb-4">
+              <div class="px-3 pt-3"><img src="../assets/images/product/product03.png" class="card-img-top rounded-4" alt="dumpling"/></div>
+              <div class="card-body d-flex justify-content-between align-items-end">
+                <div>
+                  <h5><a href="product-page.html" class="link-secondary">經典豬肉水餃</a></h5>
+                  <p class="card-text">NT.320</p>
+                </div>
+                  <span class="material-symbols-outlined" data-bs-toggle="modal" 
+                  data-bs-target="#exampleModal"
+                  >shopping_cart</span>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+    <!-- About us -->
+    <div class="mb-9">
+      <div data-aos="fade-up" >
+        <div class="container-fluid about-bg img-fluid" style="
+          height:480px;
+          background-image: url(../assets/images/index-about-bg.jpg);
+          background-repeat: no-repeat; 
+          background-size: cover ;
+        ">
+          <div class="row d-flex justify-content-center align-items-center ">
+            <div class="col-4 about-bn">
+              <img data-aos="fade-up" src="../assets/images/index-about-01.png" alt="dumpling">
+            </div>
+            <div class="col text-center py-9">
+                <div class="about-title mb-5">
+                  <h3 class="mb-1">關於我們</h3>
+                  <h5 class="text-primary">ABOUT US</h5>
+                </div>
+                <p class="mb-5">
+                  我們相信食物能夠傳遞情感，將用心融入每一道餡料中。我們以手工的方式，精心製作各式不同風味的水餃，每個飽滿的水餃都是我們心意的體現。
+                </p>
+                <a href="about.html">
+                  <button type="button" class="btn btn-lg btn-primary px-5 py-2 rounded-5 link-light">查看更多</button>
+                </a>
+              </div>
+            <div class="col-4 about-bn">
+              <img  data-aos="fade-up" src="../assets/images/index-about-02.png" alt="dumpling">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <ul class="list-unstyled d-flex flex-lg-row flex-column">
+        <li data-aos="fade-up" class="card text-white rounded-0 border-0">
+          <a href="about.html" class="link-light">
+            <img src="../assets/images/about-us-persist_dark.png" class="" alt="persist">
+            <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center">
+              <div class="about-text">
+                <h2 class="card-title text-center display-3">堅持</h2>
+                <h2 class="text-center display-7">Presist</h2>
+              </div>  
+            </div>
+          </a>
+        </li>
+
+        <li data-aos="fade-up" class="card text-white rounded-0 border-0">
+          <a href="about.html" class="link-light">
+            <img src="../assets/images/about-us-creative_dark.png" class="" alt="creative">
+            <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center">
+              <div class="about-text">  
+                <h2 class="card-title text-center display-3">創意</h2>
+                <h2 class="text-center display-7">Creative</h2>
+              </div>
+            </div>
+          </a>
+        </li>
+
+        <li data-aos="fade-up" class="card text-white rounded-0 border-0">
+          <a href="about.html" class="link-light">
+            <img src="../assets/images/about-us-share_dark.png" class="" alt="share">
+            <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center">
+               <div class="about-text">
+                <h2 class="card-title text-center display-3">分享</h2>
+                <h2 class="text-center display-7">Share</h2>
+              </div> 
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+
+  <!-- Latest news -->
+
+<div data-aos="fade-up"  class="container mb-5">
+  <div class="text-center mb-5">
+    <h3 class="mb-1">最新消息</h3>
+    <h5 class="text-primary">LATEST NEWS</h5>
+  </div>
+
+  <ul class="row list-unstyled d-flex justify-content-center">
+    <li class="card border-0 col-sm-12 col-md-6 col-lg-3 mb-4">
+      <div class="pb-3">
+        <a href="#">
+          <img src="../assets/images/news01.png" class="card-img-top border border-primary rounded-4" alt="dumpling"/>
+        </a>
+      </div>
+      <div class="d-flex justify-content-between align-items-end">
+        <div>
+          <p class="card-text text-primary mb-1">2023.08.25</p>
+          <h5><a href="#" class="link-secondary mb-0 text-truncate" >全新系列上市，引領新風潮！</a></h5>
+          <p class="card-text text-truncate">暖食坊水餃舖為了持續提供品味獨特 ...</p>
+        </div>
+    </div>
+    </li>
+    <li class="card border-0 col-sm-12 col-md-6 col-lg-3 mb-4">
+      <div class="pb-3">
+        <a href="#">
+          <img src="../assets/images/news02.png" class="card-img-top border border-primary rounded-4" alt="dumpling"/>
+        </a>
+      </div>
+      <div class="d-flex justify-content-between align-items-end">
+        <div>
+          <p class="card-text text-primary mb-1">2023.08.23</p>
+          <h5><a href="#" class="link-secondary mb-0 ">榮獲「綠色美食卓越獎」...</a></h5>
+          <p class="card-text">暖食坊水餃舖再次站在了綠色 ...</p>
+        </div>
+    </div>
+    </li>
+    <li class="card border-0 col-sm-12 col-md-6 col-lg-3 mb-4">
+      <div class="pb-3">
+        <a href="#">
+          <img src="../assets/images/news03.png" class="card-img-top border border-primary rounded-4" alt="dumpling"/>
+        </a>
+      </div>
+      <div class="d-flex justify-content-between align-items-end">
+        <div>
+          <p class="card-text text-primary mb-1">2023.08.21</p>
+          <h5><a href="#" class="link-secondary mb-0">綠色承諾，永續美食浪潮</a></h5>
+          <p class="card-text">在追求美味的同時，始終把對 ... </p>
+        </div>
+    </div>
+    </li>
+    <li class="card border-0 col-sm-12 col-md-6 col-lg-3 mb-4">
+      <div class="pb-3">
+        <a href="#">
+          <img src="../assets/images/news03.png" class="card-img-top border border-primary rounded-4" alt="dumpling"/>
+        </a>
+      </div>
+      <div class="d-flex justify-content-between align-items-end">
+        <div>
+          <p class="card-text text-primary mb-1">2023.08.25</p>
+          <h5><a href="#" class="link-secondary mb-0">全新系列上市，引領新風潮！</a></h5>
+          <p class="card-text">暖食坊水餃舖為了持續提供品 ...</p>
+        </div>
+    </div>
+    </li>
+  </ul>
+</div>
+
+  <!-- Banner -->
+  <div data-aos="fade-up" >
+      <picture>
+        <source srcset="" type="images">
+        <img src="../assets/images/index-bn-bottom.jpg" class="img-fluid" alt="Banner">
+      </picture>
+  </div>
+
+
+
+<!-- footer -->
+ <%- include('./layout/footer'); -%>
+
+
+
+<!-- Modal 按鈕 -->
+<!--
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">打開 modal</button>
+        -->
+    
+<!-- Modal 元件 -->
+<div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">商品已加入購物車</div>
+              <div class="modal-footer ">
+                <button type="button" class="btn btn-primary text-light"  data-bs-dismiss="modal">確定</button>
+              </div>
+            </div>
+          </div>
+</div>
+
+    <script type="module" src="../main.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/assets/images/LOGO-icon.png" type="image/x-icon">
+    <title>關於我們</title>
+  </head>
+  <body>
+
+    <!-- header -->
+    <%- include('./layout/header'); -%>
+
+    <!-- Banner -->
+    <div class="mb-5">
+      <picture>
+        <source srcset="" type="images">
+        <img src="../assets/images/bn-about-us.jpg" class="img-fluid" alt="Banner">
+      </picture>
+    </div>
+
+    <!-- Content -->
+      <div  class="mb-9">  
+        <div data-aos="fade-up" class="text-center mb-5">
+          <h3 class="mb-1">關於我們</h3>
+          <h5 class="text-primary">ABOUT US</h5>
+        </div>
+
+        <div class="container mb-5">
+          <div data-aos="fade-right" class="d-flex flex-md-row flex-column align-items-center justify-content-center ">
+            <div class="about-pic">
+              <picture>
+                <source srcset="" type="images">
+                <img src="../assets/images/about-us-persist_600.jpg" class="img-fluid border-top-left-radius border-top-right-radius border-bottom-left-radius" alt="persist">
+              </picture>
+            </div>
+            <div class="about-text text-center my-4 mb-6">
+              <h4 class="mx-5 mb-3 pb-3 text-primary border-bottom border-primary">堅持 Persist</h4>
+              <p class="mx-5 lh-lg">我們深信，用料的品質決定了水餃的美味。我們選擇新鮮、優質的食材，堅持不使用人工添加劑，讓每一口水餃都帶著自然的風味。我們的堅持，來自對品質的承諾。</p>
+            </div>
+          </div>
+          <div data-aos="fade-left" class=" d-flex flex-md-row-reverse flex-column  align-items-center justify-content-center">
+            <div class="about-pic">
+              <picture>
+                <source srcset="" type="images">
+                <img src="../assets/images/about-us-creative_600.jpg" class="img-fluid border-top-right-radius border-bottom-right-radius" alt="Creative">
+              </picture>
+            </div>
+            <div class="about-text text-center my-4 mb-6">
+              <h4 class="mx-5 mb-3 pb-3 text-primary border-bottom border-primary">創新 Creative</h4>
+              <p class="mx-5 lh-lg">創新是我們的靈魂，透過不同食材的結合，在水餃的世界裡探索著無盡可能。每一個新口味的誕生，都代表著突破和挑戰。不斷地帶給您喜悅和驚喜。</p>
+            </div>
+          </div>
+          <div data-aos="fade-right" class="d-flex flex-md-row flex-column  align-items-center justify-content-center">
+            <div class="about-pic">
+              <picture>
+                <source srcset="" type="images">
+                <img src="../assets/images/about-us-share_600.jpg" class="img-fluid border-top-left-radius border-bottom-left-radius border-bottom-right-radius" alt="persist">
+              </picture>
+            </div>
+            <div class="about-text text-center my-4">
+              <h4 class="mx-5 mb-3 pb-3 text-primary border-bottom border-primary">分享 Share</h4>
+              <p class="mx-5 lh-lg">食物不僅僅是味覺的享受，更是情感的傳遞。每一口水餃，都帶著情感和心意，將愛與溫暖傳遞給您。希望每一個品嚐我們水餃的人，都能感受到我們的用心，享受一頓溫暖味蕾的盛宴。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- footer -->
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+  </body>
+</html>

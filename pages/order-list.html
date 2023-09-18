@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/assets/images/LOGO-icon.png" type="image/x-icon">
+    <title>確認訂購</title>
+  </head>
+  <body>
+    <!-- header -->
+    <%- include('./layout/header'); -%>
+
+    <!-- Banner -->
+    <div class="mb-5">
+      <picture>
+        <source srcset="" type="images">
+        <img src="../assets/images/bn-about-us.jpg" class="img-fluid" alt="Banner">
+      </picture>
+    </div>
+
+    <!-- order step -->
+    <div data-aos="fade-up" class="text-center mb-5">
+        <h3 class="mb-1">購物車清單</h3>
+        <h5 class="text-primary"></h5>
+      </div>
+
+    <div class="order container mb-5">
+        <div class="text-center d-flex justify-content-center align-items-center">
+            <div class="order-step text-secondary border border-secondary px-9 py-2 rounded-5">確認訂單</div>
+            <span class="material-symbols-outlined mx-3">arrow_right_alt</span>
+            <div class="text-secondary border border-secondary px-9 py-2 rounded-5">填寫訂購資料</div>
+            <span class="material-symbols-outlined mx-3">arrow_right_alt</span>
+            <div class="text-secondary border border-secondary px-9 py-2 rounded-5">完成訂單</div>
+        </div>
+    </div>
+
+      <!-- chart -->
+    <div class="container mb-9">
+        <table class="table">
+            <thead class="bg-primary text-white fw-bold">
+                <tr>
+                    <td scope="col">縮圖</td>
+                    <th scope="col">品名</th>
+                    <th scope="col">數量</th>
+                    <th scope="col">小計</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="align-middle">
+                        <img class="img-fluid img-thumbnail"
+                            src="/assets/images/product/product01.png"
+                            alt="" style="width: 180px;">
+                    </td>
+                    <td class="align-middle fw-bold">經典豬肉水餃<br>50顆/包</td>
+                    <td class="align-middle">1 件</td>
+                    <td class="align-middle text-right">$320</td>
+                    <td class=" align-middle">
+                        <span class="material-symbols-outlined">delete</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="align-middle">
+                        <img class="img-fluid img-thumbnail"
+                            src="/assets/images/product/product01.png"
+                            alt="" style="width: 180px;">
+                    </td>
+                    <td class="align-middle fw-bold">經典豬肉水餃<br>50 顆 / 包</td>
+                    <td class="align-middle">1 件</td>
+                    <td class="align-middle text-right">$320</td>
+                    <td class=" align-middle">
+                        <span class="material-symbols-outlined">delete</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"></td>
+                    <td class="text-right fw-bold">商品合計</td>
+                    <td class="text-right fw-bold">$640</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="table">
+            <thead class="bg-primary text-white fw-bold">
+                <tr>
+                    <td scope="col">運送方式</td>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td colspan="" class="d-flex flex-lg-row flex-column gap-lg-4 me-2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                宅配
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                自取
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                超商取貨
+                            </label>
+                        </div>
+
+                    </td>
+                    <td class="text-right">運費</td>
+                    <td class="text-right">$60</td>
+
+                </tr>
+
+                <tr>
+                    <td colspan=""></td>
+                    <td class="text-right text-danger fw-bold">合計</td>
+                    <td class="text-right text-danger fw-bold">$700</td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <!-- button -->
+    <div class="container mb-9 ">
+        <div class="text-center">
+            <a href="product-list.html">
+                <button type="button" class="btn btn-primary py-2 rounded-5 link-light m-lg-2" style="width: 160px;">繼續購物</button>
+            </a>
+            <a href="order-form.html">
+                <button type="button" class="btn btn-primary py-2 rounded-5 link-light m-lg-2" style="width: 160px;">下一步</button>
+            </a>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

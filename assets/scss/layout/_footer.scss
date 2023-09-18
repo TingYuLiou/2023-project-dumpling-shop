@@ -1,0 +1,9 @@
+.footer{
+  background:#FDF1D9;
+}
+
+.bottom-menu{
+  @include pad{
+    display: none;
+  }
+}

@@ -1,0 +1,43 @@
+
+
+.web-bn{
+  @include mobile{
+    display: none;
+  }
+}
+
+
+
+input{
+  width: 240px;
+  height: 32px;
+  border-radius: 16px;
+}
+
+.about-bn{
+  @include mobile{
+    display: none;
+  }
+}
+
+.card{
+  transition: all 0.5s ease-out;
+  &:hover{
+    transform:scale(1.05,1.05);
+  }
+}
+
+.product{
+  .card{
+    &:hover{
+      background: #FFF8F0;
+    }
+  }
+}
+
+.menu-item, .nav-item, .about-text {
+  transition: all 0.5s ease-out;
+  &:hover{
+    transform:translateY(-0.5em);
+}
+}

@@ -1,0 +1,13 @@
+
+.order-step{
+    background: #FDF1D9;
+}
+
+.order{
+    img{
+        width: 300px;
+    }
+    @include pad{
+        display: none;
+    }
+}

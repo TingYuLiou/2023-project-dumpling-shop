@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/assets/images/LOGO-icon.png" type="image/x-icon">
+    <title>經典豬肉水餃</title>
+  </head>
+  <body>
+    <!-- header -->
+    <%- include('./layout/header'); -%>
+
+    <!-- Banner -->
+    <div class="mb-5">
+      <picture>
+        <source srcset="" type="images">
+        <img src="../assets/images/bn-product.png" class="img-fluid" alt="Banner">
+      </picture>
+    </div>
+
+    <!-- content -->
+    <div class="container mb-5">
+        <div class="d-flex justify-content-srart">
+  
+          <!-- navbar -->
+          <nav class="nav-left text-center mt-9" style="width: 100px;">
+            <h6 class="border-bottom border-primary pb-2 mb-2">購買商品</h3>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="#">推薦專區</a></li>
+              <li class="mb-2"><a href="#">風味水餃</a></li>
+              <li class="mb-2"><a href="#">組合包</a></li>
+              <li class="mb-2"><a href="#">其他商品</a></li>
+            </ul>
+          </nav>
+
+          <!-- product card -->
+          <div class="container">
+            <div class="row d-flex flex-column flex-lg-row justify-content-center gap-4 py-6 border-bottom mb-6">
+              <div class="col-lg-4"><img src="/assets/images/product/product01.png" alt="dumpling"></div>
+              <div class=" col-lg-6 d-flex flex-column justify-content-between">
+                  <div>
+                    <h2>經典豬肉水餃 50顆/包</h2>
+                    <h3 class="lh-lg mb-4 border-bottom">NT$320</h3>
+                    <p>細緻豬肉與新鮮韭菜的完美結合，散發著濃郁的香氣，帶來一份經典的美味。每一口都是一趟回味之旅，讓您能感受到豬肉的鮮嫩與韭菜的清新，猶如置身於美味的交響樂中。</p>
+                  </div>
+                  <div>
+                    <div class="d-flex gap-2">
+                      <p>數量</p>
+                      <div class="d-flex mb-4">
+                        <a href="#" class="d-block link-secondary border py-1 px-3">+</a>
+                        <a href="#" class="d-block link-secondary border py-1 px-3">1</a>
+                        <a href="#" class="d-block link-secondary border py-1 px-3">-</a>
+                      </div>
+                    </div>
+
+                    <div class="d-flex gap-2">
+                      <div class="text-center">
+                        <button type="button"  data-bs-toggle="modal" 
+                        data-bs-target="#exampleModal" class="btn btn-lg btn-danger px-5 py-2 link-light">加入購物車
+                        </button>
+                        </a>
+                      </div>
+                      <div class="text-center">
+                        <a href="order-list.html"><button type="button" class="btn btn-lg btn-primary px-5 py-2 link-light">  立即購買  </button>
+                        </a>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <!-- product intro -->
+            <div class="px-4">
+              <ul class="lh-lg">
+                <li>我們堅持無添加物，保證純淨的口感。</li>
+                <li>新鮮的韭菜和優質的豬肉，以最佳狀態進行製作。</li>
+                <li>所有成分均來自嚴格把關的合作農場。</li>
+                <li>韭菜的清新與豬肉的濃郁，帶來獨特的風味。</li>
+                <li>僅使用韭菜、豬肉和調味料，保持純淨自然。</li>
+                <li>提供優質蛋白質和維生素，帶來能量和營養。</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <%- include('./layout/footer'); -%>
+
+
+
+
+
+    <!-- Modal 元件 -->
+    <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-body">商品已加入購物車</div>
+                  <div class="modal-footer ">
+                    <button type="button" class="btn btn-primary text-light"  data-bs-dismiss="modal">確定</button>
+                  </div>
+                </div>
+              </div>
+    </div>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

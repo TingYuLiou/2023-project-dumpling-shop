@@ -1,0 +1,5 @@
+.nav-left{
+    @include mobile{
+        display: none;
+      }
+}
